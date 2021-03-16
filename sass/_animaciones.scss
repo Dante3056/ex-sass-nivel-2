@@ -1,0 +1,28 @@
+@import "variables";
+@import "mixins";
+
+@keyframes strip-1 {
+  from {
+    transform: $from-left;
+  }
+}
+@keyframes strip-2 {
+  from {
+    transform: $from-bottom;
+  }
+}
+@keyframes strip-3 {
+  from {
+    transform: $from-top;
+  }
+}
+@keyframes strip-4 {
+  from {
+    transform: $from-bottom;
+  }
+}
+@keyframes strip-5 {
+  from {
+    transform: $from-right;
+  }
+}

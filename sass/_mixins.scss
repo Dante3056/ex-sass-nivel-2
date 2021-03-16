@@ -1,0 +1,21 @@
+@mixin strip-solo($color, $name, $length) {
+  background-color: $color;
+  animation-name: $name;
+  animation-duration: $length;
+  animation-timing-function: ease-out;
+}
+
+@mixin translucent {
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: skew(30deg) scaleY(1) translate(0, 0);
+  transform: skew(30deg) scaleY(1) translate(0, 0);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  overflow: hidden;
+}
+
+@mixin hover-effect {
+  -webkit-transform: skew(0deg) scaleX(2) translate(0, 0);
+  transform: skew(0deg) scaleX(2) translate(0, 0);
+  opacity: 0.2;
+}
